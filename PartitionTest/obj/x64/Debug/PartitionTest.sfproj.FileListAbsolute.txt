@@ -1,0 +1,2 @@
+d:\temp\PartitionTest\PartitionTest\obj\x64\Debug\PartitionTest.sfprojResolveAssemblyReference.cache
+D:\Data\PartitionTest\PartitionTest\obj\x64\Debug\PartitionTest.sfprojResolveAssemblyReference.cache

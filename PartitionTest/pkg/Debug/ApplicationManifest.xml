@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="PartitionTestType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters>
+    <Parameter Name="StatefulTest_MinReplicaSetSize" DefaultValue="2" />
+    <Parameter Name="StatefulTest_TargetReplicaSetSize" DefaultValue="3" />
+  </Parameters>
+  <!-- Import the ServiceManifest from the ServicePackage. The ServiceManifestName and ServiceManifestVersion 
+       should match the Name and Version attributes of the ServiceManifest element defined in the 
+       ServiceManifest.xml file. -->
+  <ServiceManifestImport>
+    <ServiceManifestRef ServiceManifestName="StatefulTestPkg" ServiceManifestVersion="1.0.0" />
+    <ConfigOverrides />
+  </ServiceManifestImport>
+  <DefaultServices>
+    <!--
+      Important to note, that the Fabric can, and does allocate more than one partition to a given node, even when there
+      may be a free node available.  Odd behavior, but demonstrated for this stateful service: upon disabling one of the active
+      nodes, the partition was moved to another node that already had an active partition on it, even though there was an
+      available node.
+    -->
+    <Service Name="StatefulTest">
+      <StatefulService ServiceTypeName="StatefulTestType" TargetReplicaSetSize="[StatefulTest_TargetReplicaSetSize]" MinReplicaSetSize="[StatefulTest_MinReplicaSetSize]">
+        <UniformInt64Partition PartitionCount="4" LowKey="0" HighKey="3" />
+      </StatefulService>
+    </Service>
+  </DefaultServices>
+</ApplicationManifest>

@@ -1,0 +1,16 @@
+d:\temp\PartitionTest\Interfaces\bin\Debug\Interfaces.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\Interfaces.pdb
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Data.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Data.Interfaces.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Internal.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Internal.Strings.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Services.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\ServiceFabricServiceModel.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\System.Fabric.dll
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Data.xml
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Data.Interfaces.xml
+d:\temp\PartitionTest\Interfaces\bin\Debug\Microsoft.ServiceFabric.Services.xml
+d:\temp\PartitionTest\Interfaces\bin\Debug\System.Fabric.xml
+d:\temp\PartitionTest\Interfaces\bin\Debug\en-us\Microsoft.ServiceFabric.Internal.Strings.resources.dll
+d:\temp\PartitionTest\Interfaces\obj\Debug\Interfaces.dll
+d:\temp\PartitionTest\Interfaces\obj\Debug\Interfaces.pdb
